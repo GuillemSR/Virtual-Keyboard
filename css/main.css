@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(46, 46, 46);
+}
+
+#keyboard, #cajatexto, #contenido, #divCajaText{
+    width: 900px;
+}
+
+#keyboard{
+    margin: 0 auto;
+    border: 1px solid black;
+    height: 275px;
+    padding-left: 17px;
+    padding-top: 1%;
+    background-color: rgb(31, 31, 31);
+    border-radius: 6px;
+    -webkit-box-shadow: 1px 7px 23px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 7px 23px -2px rgba(0,0,0,0.75);
+    box-shadow: 1px 7px 23px -2px rgba(0,0,0,0.75);
+}
+
+#cajatexto{
+    padding: 2%;
+    height: 200px;
+    width: 700px !important;
+    margin: 0 auto !important;
+    resize: none;
+    border-radius: 6px;
+    background-color: rgb(165, 165, 165);
+    -webkit-box-shadow: 1px 7px 23px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 7px 23px -2px rgba(0,0,0,0.75);
+    box-shadow: 1px 7px 23px -2px rgba(0,0,0,0.75);
+    outline: none;
+}
+
+#cajatexto::after{
+    content: 'T';
+}
+
+#contenido{
+    height: 495px;
+    margin-top: 100px !important;
+    margin: 0 auto;
+}
+
+#divCajaTexto{
+    height: 200px;
+    margin-bottom: 20px !important;
+    width: 700px !important;
+    margin: 0 auto;
+}
+
+.letter, .tab, .delete, .capslock, .enter, .shift, .space, .char{
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid black;
+    margin: 0.2%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    float: left;
+    user-select: none;
+    border-radius: 6px;   
+    color: white;
+    font-size: 20px;
+
+    background: rgba(46,46,46,1);
+    background: -moz-linear-gradient(top, rgba(46,46,46,1) 0%, rgba(31,31,31,1) 16%, rgba(19,19,19,1) 41%, rgba(19,19,19,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(46,46,46,1)), color-stop(16%, rgba(31,31,31,1)), color-stop(41%, rgba(19,19,19,1)), color-stop(100%, rgba(19,19,19,1)));
+    background: -webkit-linear-gradient(top, rgba(46,46,46,1) 0%, rgba(31,31,31,1) 16%, rgba(19,19,19,1) 41%, rgba(19,19,19,1) 100%);
+    background: -o-linear-gradient(top, rgba(46,46,46,1) 0%, rgba(31,31,31,1) 16%, rgba(19,19,19,1) 41%, rgba(19,19,19,1) 100%);
+    background: -ms-linear-gradient(top, rgba(46,46,46,1) 0%, rgba(31,31,31,1) 16%, rgba(19,19,19,1) 41%, rgba(19,19,19,1) 100%);
+    background: linear-gradient(to bottom, rgba(46,46,46,1) 0%, rgba(31,31,31,1) 16%, rgba(19,19,19,1) 41%, rgba(19,19,19,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2e2e', endColorstr='#131313', GradientType=0 );
+}
+
+.letter:active, .tab:active, .delete:active, .capslock:active, .enter:active, .shift:active, .space:active, .char:active{
+    -webkit-box-shadow: inset 0px 0px 9px 3px rgba(0,0,0,0.49);
+    -moz-box-shadow: inset 0px 0px 9px 3px rgba(0,0,0,0.49);
+    box-shadow: inset 0px 0px 9px 3px rgba(0,0,0,0.49);
+}
+
+.letter{
+    width: 60px;    
+}
+
+.char{
+    width: 60px;
+}
+
+.tab{
+    width: 90px;    
+}
+
+.delete{
+    width: 130px;
+    font-size: 50px;
+    line-height: 52px;
+}
+
+.capslock{
+    position: relative;
+    padding-top: 3px;
+    width: 100px;
+    line-height: 25px !important; 
+}
+
+.enter{
+    width: 120px;
+}
+
+.shift{
+    width: 142px;
+}
+
+.space{
+    width: 860px;
+    line-height: 10px !important; 
+}
+
+#date{
+    height: 40px;
+    margin-bottom: -2px;
+    color: rgba(255, 255, 255, 0.76);
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    font-family: Courier New, monospace;
+}
+
+#led{
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    background-color: grey;
+}
